@@ -101,6 +101,14 @@ infrastructure-lifecycle-capital-planning/
 │   └── fixtures/
 │
 ├── examples/
+│   └── 00_asset_management_risk_plan_templates/
+│       ├── README.md
+│       ├── 01_asset_risk_assessment_plan.md
+│       ├── 02_risk_based_capital_prioritization_plan.md
+│       ├── 03_asset_risk_register.md
+│       ├── 04_project_risk_evaluation.md
+│       ├── 05_capital_funding_scenario_analysis.md
+│       └── 06_risk_reduction_forecast.md
 │   ├── 01_engineering_economics/
 │   ├── 02_single_asset/
 │   ├── 03_risk_based_intervention/
