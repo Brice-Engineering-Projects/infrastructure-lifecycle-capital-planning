@@ -101,20 +101,56 @@ infrastructure-lifecycle-capital-planning/
 │   └── fixtures/
 │
 ├── examples/
-│   └── 00_asset_management_risk_plan_templates/
-│       ├── README.md
-│       ├── 01_asset_risk_assessment_plan.md
-│       ├── 02_risk_based_capital_prioritization_plan.md
-│       ├── 03_asset_risk_register.md
-│       ├── 04_project_risk_evaluation.md
-│       ├── 05_capital_funding_scenario_analysis.md
-│       └── 06_risk_reduction_forecast.md
+│   ├── 00_asset_management_risk_plan_templates/
+│   │   ├── README.md
+│   │   ├── 01_asset_risk_assessment_plan.md
+│   │   ├── 02_risk_based_capital_prioritization_plan.md
+│   │   ├── 03_asset_risk_register.md
+│   │   ├── 04_project_risk_evaluation.md
+│   │   ├── 05_capital_funding_scenario_analysis.md
+│   │   └── 06_risk_reduction_forecast.md
+│   │
 │   ├── 01_engineering_economics/
-│   ├── 02_single_asset/
+│   │   ├── README.md
+│   │   ├── present_value/
+│   │   ├── life_cycle_cost/
+│   │   ├── equivalent_annual_cost/
+│   │   └── benefit_cost_analysis/
+│   │
+│   ├── 02_asset_risk_assessment/
+│   │   ├── README.md
+│   │   ├── probability_of_failure/
+│   │   ├── consequence_of_failure/
+│   │   ├── risk_scoring/
+│   │   └── criticality/
+│   │
 │   ├── 03_risk_based_intervention/
-│   ├── 04_uncertainty/
-│   ├── 05_asset_portfolio/
-│   └── 06_multi_year_cip/
+│   │   ├── README.md
+│   │   ├── intervention_alternatives/
+│   │   ├── residual_risk/
+│   │   ├── risk_reduction/
+│   │   └── intervention_timing/
+│   │
+│   ├── 04_uncertainty_and_scenarios/
+│   │   ├── README.md
+│   │   ├── sensitivity_analysis/
+│   │   ├── monte_carlo/
+│   │   ├── expected_annual_loss/
+│   │   └── scenario_analysis/
+│   │
+│   ├── 05_portfolio_prioritization/
+│   │   ├── README.md
+│   │   ├── project_ranking/
+│   │   ├── risk_reduction_efficiency/
+│   │   ├── multi_criteria_prioritization/
+│   │   └── budget_constraints/
+│   │
+│   └── 06_multi_year_capital_planning/
+│       ├── README.md
+│       ├── funding_scenarios/
+│       ├── deterioration_forecast/
+│       ├── risk_reduction_forecast/
+│       └── cip_optimization/
 │
 ├── reports/
 │   ├── figures/
