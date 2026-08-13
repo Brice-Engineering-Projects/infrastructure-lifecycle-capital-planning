@@ -1,0 +1,398 @@
+##############################################################################
+# infrastructure-lifecycle-capital-planning
+#
+# Layout: Python 3.12 package in src/, tests/, notebooks/, docs/
+# Tooling: uv (primary), pip, conda, poetry
+# IDEs:    JetBrains (PyCharm), VS Code / Visual Studio
+##############################################################################
+
+# ---------------------------------------------------------------------------
+# Python bytecode & compiled extensions
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# ---------------------------------------------------------------------------
+# Build, packaging & distribution artifacts
+# ---------------------------------------------------------------------------
+build/
+dist/
+sdist/
+wheels/
+downloads/
+develop-eggs/
+eggs/
+.eggs/
+share/python-wheels/
+# Legacy setuptools output — anchored to the repo root so a package named
+# src/lib/ or src/var/ is never accidentally ignored.
+/lib/
+/lib64/
+/parts/
+/var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+# PyInstaller — generated next to the spec file it builds from
+*.manifest
+*.spec
+
+# ---------------------------------------------------------------------------
+# Virtual environments
+# Covers uv (.venv), python -m venv, virtualenv, conda prefix installs,
+# and pipenv/poetry in-project venvs.
+# ---------------------------------------------------------------------------
+.venv/
+.venv*/
+venv/
+venv*/
+ENV/
+env/
+env.bak/
+venv.bak/
+.env/
+__pypackages__/
+# Local conda environments created with `conda create -p ./envs`
+envs/
+.conda/
+.condarc
+
+# ---------------------------------------------------------------------------
+# Package manager caches & lock/state files
+#
+# NOTE: uv.lock, poetry.lock, and conda-lock.yml SHOULD be committed for an
+# application (they pin the reproducible build). They are intentionally NOT
+# ignored here. Uncomment only if this becomes a distributed library.
+# ---------------------------------------------------------------------------
+# uv
+.uv/
+uv-cache/
+# .python-version is committed so `uv`/`pyenv` pin the same interpreter.
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+pip-wheel-metadata/
+
+# pipenv / poetry / pdm
+.pdm.toml
+.pdm-python
+.pdm-build/
+poetry.toml
+# Poetry's `install --sync` scratch dir
+.poetry-cache/
+
+# conda
+*.conda
+*.tar.bz2
+conda-bld/
+.conda-build/
+
+# ---------------------------------------------------------------------------
+# Testing, coverage & type/lint caches
+# ---------------------------------------------------------------------------
+.pytest_cache/
+.cache/
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+nosetests.xml
+junit*.xml
+test-results/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+.pylint.d/
+cython_debug/
+
+# ---------------------------------------------------------------------------
+# Jupyter / IPython notebooks
+#
+# Committed notebooks should have cleared outputs (nbstripout / jupytext).
+# Checkpoints and kernel state never belong in version control.
+# ---------------------------------------------------------------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+.jupyter/
+.jupyter_ystore.db
+.virtual_documents/
+# Ad-hoc scratch notebooks — keep exploratory work out of the repo
+notebooks/scratch/
+notebooks/**/*-scratch.ipynb
+notebooks/**/Untitled*.ipynb
+Untitled*.ipynb
+
+# ---------------------------------------------------------------------------
+# JetBrains (PyCharm / IntelliJ)
+#
+# Ignore per-developer state; the shared project config (code style,
+# inspections, run configs) can be committed via the un-ignore rules below.
+# ---------------------------------------------------------------------------
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries/
+.idea/**/shelf/
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/**/httpRequests/
+.idea/**/aws.xml
+.idea/$CACHE_FILE$
+.idea/httpRequests/
+.idea/caches/
+.idea/modules.xml
+.idea/*.iml
+.idea/misc.xml
+.idea/sonarlint/
+*.iml
+*.ipr
+*.iws
+/out/
+*.idea/
+# Un-ignore team-shared settings (drop these lines to ignore .idea/ entirely)
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+!.idea/runConfigurations/
+
+# ---------------------------------------------------------------------------
+# VS Code
+#
+# Ignore local machine state; allow the shared, checked-in team config.
+# ---------------------------------------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.vscode-test/
+*.code-workspace
+.history/
+
+# ---------------------------------------------------------------------------
+# Visual Studio (full IDE) / MSBuild
+#
+# Build-output dirs are root-anchored: unanchored [Bb]in/ would swallow a
+# legitimate Python src/**/bin/ or scripts dir.
+# ---------------------------------------------------------------------------
+.vs/
+/[Dd]ebug/
+/[Rr]elease/
+/[Bb]in/
+/[Oo]bj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+
+# ---------------------------------------------------------------------------
+# Secrets & local configuration — NEVER commit
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+*.local.toml
+*.local.yaml
+*.local.yml
+secrets.*
+credentials.json
+service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+.netrc
+.pypirc
+.secrets/
+.aws/
+.azure/
+.gcloud/
+
+# ---------------------------------------------------------------------------
+# Data & model artifacts
+#
+# Capital planning work pulls large asset/cost tables. Keep raw and interim
+# data out of git — use DVC, object storage, or a data warehouse instead.
+# Small, curated reference files can be force-added with `git add -f`.
+# ---------------------------------------------------------------------------
+data/raw/
+data/interim/
+data/processed/
+data/external/
+data/tmp/
+!data/**/.gitkeep
+!data/**/README.md
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.xlsm
+*.parquet
+*.feather
+*.orc
+*.avro
+*.h5
+*.hdf5
+*.pickle
+*.pkl
+*.joblib
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+*.mdb
+*.accdb
+*.shp
+*.shx
+*.dbf
+*.gdb/
+*.gpkg
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+# Allow small fixtures that tests depend on
+!tests/**/fixtures/**/*.csv
+!tests/**/fixtures/**/*.xlsx
+!tests/**/fixtures/**/*.parquet
+
+# Model / experiment tracking
+models/
+checkpoints/
+artifacts/
+mlruns/
+.mlflow/
+wandb/
+lightning_logs/
+outputs/
+runs/
+
+# ---------------------------------------------------------------------------
+# Reports & generated documentation
+# ---------------------------------------------------------------------------
+docs/_build/
+docs/_autosummary/
+docs/api/_generated/
+site/
+_site/
+.docusaurus/
+reports/generated/
+reports/figures/
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+# Keep authored PDFs/plots by force-adding them: `git add -f path/to/file.pdf`
+*.pdf
+*.pptx
+*.docx
+
+# ---------------------------------------------------------------------------
+# Logs, temp files & profiling output
+# ---------------------------------------------------------------------------
+logs/
+*.log.*
+*.tmp
+*.temp
+*.bak
+*.orig
+*.swp
+*.swo
+tmp/
+temp/
+.scratch/
+*.prof
+*.lprof
+*.pstats
+*.hprof
+
+# ---------------------------------------------------------------------------
+# Infrastructure & container tooling
+# ---------------------------------------------------------------------------
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform.lock.hcl
+crash.log
+docker-compose.override.yml
+.dockerignore.local
+
+# ---------------------------------------------------------------------------
+# Task runners & misc tooling
+# ---------------------------------------------------------------------------
+.direnv/
+.envrc.local
+.tool-versions.local
+.pre-commit-cache/
+.ipynb_convert/
+node_modules/
+.npm/
+.yarn/
+.sass-cache/
+
+# ---------------------------------------------------------------------------
+# AI assistant local state
+# ---------------------------------------------------------------------------
+.claude/settings.local.json
+.claude/history/
+.aider*
+.cursorignore.local
+.continue/
+
+# ---------------------------------------------------------------------------
+# OS-generated files
+# ---------------------------------------------------------------------------
+# macOS
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
