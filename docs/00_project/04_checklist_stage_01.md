@@ -2,7 +2,7 @@
 
 ## 1. Core Economic Calculations
 
-### 1.1 Time-Value-of-Money Calculations
+### 1.1 Time-Value-of-Money Calculations (economics folder)
 
 * [x] Implement present value of a single future cash flow
 * [x] Implement future value of a single present cash flow
@@ -11,9 +11,9 @@
 * [x] Implement present value of an escalating recurring series
 * [x] Implement future value of an escalating recurring series
 * [x] Implement discount-factor calculations
-* [ ] Implement compound-factor calculations
+* [x] Implement compound-factor calculations
 
-### 1.2 Cash-Flow Analysis
+### 1.2 Cash-Flow Analysis (economic folder)
 
 * [ ] Discount individual cash flows occurring at specified periods
 * [ ] Discount irregular cash-flow schedules
@@ -24,7 +24,7 @@
 * [ ] Define and document cash-flow timing conventions
 * [ ] Define and document cash-flow sign conventions
 
-### 1.3 Economic Assumptions
+### 1.3 Economic Assumptions (economic folder)
 
 * [ ] Support configurable analysis periods
 * [ ] Support configurable discount rates
@@ -34,7 +34,7 @@
 * [ ] Define consistent treatment of inflation and escalation
 * [ ] Prevent inconsistent combinations of real and nominal assumptions where appropriate
 
-### 1.4 Annualized Economic Measures
+### 1.4 Annualized Economic Measures (economic folder)
 
 * [ ] Implement capital recovery calculations
 * [ ] Implement equivalent annual cost calculations
@@ -179,7 +179,8 @@
 
 * [x] Develop unit tests for present-value functions
 * [x] Develop unit tests for future-value functions
-* [ ] Develop unit tests for discount-factor calculations
+* [x] Develop unit tests for discount-factor calculations
+* [x] Develop unit tests for compound-factor calculations
 * [ ] Develop unit tests for cash-flow discounting
 * [ ] Develop unit tests for net present value
 * [ ] Develop unit tests for equivalent annual cost
