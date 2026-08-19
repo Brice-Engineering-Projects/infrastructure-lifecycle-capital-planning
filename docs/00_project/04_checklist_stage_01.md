@@ -5,10 +5,11 @@
 ### 1.1 Time-Value-of-Money Calculations
 
 * [x] Implement present value of a single future cash flow
-* [ ] Implement future value of a single present cash flow
+* [x] Implement future value of a single present cash flow
 * [x] Implement present value of a uniform recurring series
-* [ ] Implement future value of a uniform recurring series
+* [x] Implement future value of a uniform recurring series
 * [x] Implement present value of an escalating recurring series
+* [x] Implement future value of an escalating recurring series
 * [ ] Implement discount-factor calculations
 * [ ] Implement compound-factor calculations
 
@@ -177,7 +178,7 @@
 ### 5.3 Unit Testing
 
 * [x] Develop unit tests for present-value functions
-* [ ] Develop unit tests for future-value functions
+* [x] Develop unit tests for future-value functions
 * [ ] Develop unit tests for discount-factor calculations
 * [ ] Develop unit tests for cash-flow discounting
 * [ ] Develop unit tests for net present value
