@@ -10,7 +10,7 @@
 * [x] Implement future value of a uniform recurring series
 * [x] Implement present value of an escalating recurring series
 * [x] Implement future value of an escalating recurring series
-* [ ] Implement discount-factor calculations
+* [x] Implement discount-factor calculations
 * [ ] Implement compound-factor calculations
 
 ### 1.2 Cash-Flow Analysis
