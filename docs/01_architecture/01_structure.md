@@ -45,15 +45,15 @@ infrastructure-lifecycle-capital-planning/
 │   │
 │   ├── 02_methodology/
 │   │   ├── 00_methodology_overview.md
-│   │   ├── engineering_economics.md
-│   │   ├── lifecycle_cost_analysis.md
-│   │   ├── condition_and_deterioration.md
-│   │   ├── remaining_useful_life.md
-│   │   ├── risk_methodology.md
-│   │   ├── criticality.md
-│   │   ├── levels_of_service.md
-│   │   ├── uncertainty.md
-│   │   └── capital_prioritization.md
+│   │   ├── 01_engineering_economics.md
+│   │   ├── 02_lifecycle_cost_analysis.md
+│   │   ├── 03_condition_and_deterioration.md
+│   │   ├── 04_remaining_useful_life.md
+│   │   ├── 05_risk_methodology.md
+│   │   ├── 06_criticality.md
+│   │   ├── 07_levels_of_service.md
+│   │   ├── 08_uncertainty.md
+│   │   └── 09_capital_prioritization.md
 │   │
 │   └── 03_reference/
 │       ├── README.md
@@ -112,45 +112,45 @@ infrastructure-lifecycle-capital-planning/
 │   │
 │   ├── 01_engineering_economics/
 │   │   ├── README.md
-│   │   ├── present_value/
-│   │   ├── life_cycle_cost/
-│   │   ├── equivalent_annual_cost/
-│   │   └── benefit_cost_analysis/
+│   │   ├── 01_present_value/
+│   │   ├── 02_life_cycle_cost/
+│   │   ├── 03_equivalent_annual_cost/
+│   │   └── 04_benefit_cost_analysis/
 │   │
 │   ├── 02_asset_risk_assessment/
 │   │   ├── README.md
-│   │   ├── probability_of_failure/
-│   │   ├── consequence_of_failure/
-│   │   ├── risk_scoring/
-│   │   └── criticality/
+│   │   ├── 01_probability_of_failure/
+│   │   ├── 02_consequence_of_failure/
+│   │   ├── 03_risk_scoring/
+│   │   └── 04_criticality/
 │   │
 │   ├── 03_risk_based_intervention/
 │   │   ├── README.md
-│   │   ├── intervention_alternatives/
-│   │   ├── residual_risk/
-│   │   ├── risk_reduction/
-│   │   └── intervention_timing/
+│   │   ├── 01_intervention_alternatives/
+│   │   ├── 02_residual_risk/
+│   │   ├── 03_risk_reduction/
+│   │   └── 04_intervention_timing/
 │   │
 │   ├── 04_uncertainty_and_scenarios/
 │   │   ├── README.md
-│   │   ├── sensitivity_analysis/
-│   │   ├── monte_carlo/
-│   │   ├── expected_annual_loss/
-│   │   └── scenario_analysis/
+│   │   ├── 01_sensitivity_analysis/
+│   │   ├── 02_monte_carlo/
+│   │   ├── 03_expected_annual_loss/
+│   │   └── 04_scenario_analysis/
 │   │
 │   ├── 05_portfolio_prioritization/
 │   │   ├── README.md
-│   │   ├── project_ranking/
-│   │   ├── risk_reduction_efficiency/
-│   │   ├── multi_criteria_prioritization/
-│   │   └── budget_constraints/
+│   │   ├── 01_project_ranking/
+│   │   ├── 02_risk_reduction_efficiency/
+│   │   ├── 03_multi_criteria_prioritization/
+│   │   └── 04_budget_constraints/
 │   │
 │   └── 06_multi_year_capital_planning/
 │       ├── README.md
-│       ├── funding_scenarios/
-│       ├── deterioration_forecast/
-│       ├── risk_reduction_forecast/
-│       └── cip_optimization/
+│       ├── 01_funding_scenarios/
+│       ├── 02_deterioration_forecast/
+│       ├── 03_risk_reduction_forecast/
+│       └── 04_cip_optimization/
 │
 ├── reports/
 │   ├── figures/
